@@ -29,7 +29,7 @@ public class ASUHelloWorldJavaFX extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("ASU Hello World Spring 2024");
+        primaryStage.setTitle("Pediatric Office Landing Page");
 
         Label label = new Label("Pedriatic Office System\nWelcome! Please select your role below:");
         label.setAlignment(Pos.CENTER);
@@ -58,7 +58,8 @@ public class ASUHelloWorldJavaFX extends Application {
         HBox buttonBox = new HBox(10, button1, button2); // Add spacing of 10 between buttons
         buttonBox.setAlignment(Pos.CENTER);
 
-        VBox root = new VBox(10, label, buttonBox); // Add spacing of 10 between label and buttonBox
+        // Add spacing of 10 between label and buttonBox
+        VBox root = new VBox(10, label, buttonBox); 
         root.setAlignment(Pos.CENTER); // Center VBox content
 
         // Applying light blue background
@@ -74,7 +75,7 @@ public class ASUHelloWorldJavaFX extends Application {
         Stage stage = new Stage();
         VBox root = new VBox();
         
-        // Title
+        // Title of the Doctor login
         Label titleLabel = new Label("Doctor's Login");
         titleLabel.setStyle("-fx-font-size: 18pt; -fx-font-weight: bold; -fx-font-family: 'Arial';");
         titleLabel.setAlignment(Pos.CENTER);
