@@ -94,12 +94,12 @@ public class ASUHelloWorldJavaFX extends Application {
         passwordBox.getChildren().addAll(passwordLabel, passwordTextField);
         passwordBox.setAlignment(Pos.CENTER);
         
-        // Error message label
+        // Display Error message label
         Label errorLabel = new Label();
         errorLabel.setTextFill(Color.RED);
         errorLabel.setAlignment(Pos.CENTER);
         
-        // Button to sign in
+        // Create Button to sign in
         Button signInButton = new Button("Sign in");
         signInButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
