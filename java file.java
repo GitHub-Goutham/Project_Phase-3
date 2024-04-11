@@ -34,7 +34,7 @@ public class ASUHelloWorldJavaFX extends Application {
         Label label = new Label("Pedriatic Office System\nWelcome! Please select your role below:");
         label.setAlignment(Pos.CENTER);
         label.setStyle("-fx-font-size: 18pt; -fx-font-weight: bold; -fx-font-family: 'Arial';");
-
+        //Button for Doctor/Nurse
         Button button1 = new Button("Doctor/Nurse");
         button1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -44,7 +44,7 @@ public class ASUHelloWorldJavaFX extends Application {
                 openDoctorLoginPage();
             }
         });
-
+        //Buttons for Patients
         Button button2 = new Button("Patients/Guardians");
         button2.setOnAction(new EventHandler<ActionEvent>() {
             @Override
